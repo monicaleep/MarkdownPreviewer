@@ -19,7 +19,7 @@ class App extends React.Component{
 # This is a Heading h1
 ###### This is a Heading h6
 
-## Emphasis
+### Emphasis
 
 *This text will be italic* \n
 _This will also be italic_
@@ -29,32 +29,34 @@ __This will also be bold__
 
 _You **can** combine them_
 
-## Lists
+### Lists
 
-### Unordered (Materialize does not use bullets)
+#### Unordered (Materialize does not use bullets)
 
 * Item 1
 * Item 2
   * Item 2a
   * Item 2b
 
-### Ordered
+#### Ordered
 1. Item 1
 1. Item 2
 1. Item 3
    1. Item 3a
    1. Item 3b
 
-## Images
+### Images
 ![This is a alt text.](https://i.imgur.com/SwMeiDI_d.webp?maxwidth=728&fidelity=grand "This is a sample image.")
-## Links
+### Links
 This text is based on [Markdown Live Preview](https://markdownlivepreview.com/).
 ## Blockquotes
 > Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
 >
 >> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-## Inline code
-This web site is using \`markedjs/marked\``
+### Inline code
+This web site is using \`markedjs/marked\`
+### Code Blocks
+<code>let x = 0 console.log(x)</code>`
     };
     this.reset = this.reset.bind(this);
     this.updateMarkdown = this.updateMarkdown.bind(this);
