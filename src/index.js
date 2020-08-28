@@ -6,6 +6,9 @@ import DOMPurify from 'dompurify';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 
+Marked.setOptions({
+  breaks: true
+})
 
 // const test = DOMPurify.sanitize(Marked("#### hi"));
 class App extends React.Component{
@@ -56,7 +59,9 @@ This text is based on [Markdown Live Preview](https://markdownlivepreview.com/).
 ### Inline code
 This web site is using \`markedjs/marked\`
 ### Code Blocks
-<code>let x = 0 console.log(x)</code>`
+\`\`\`
+let x = 0 console.log(x)
+\`\`\``
     };
     this.reset = this.reset.bind(this);
     this.updateMarkdown = this.updateMarkdown.bind(this);
